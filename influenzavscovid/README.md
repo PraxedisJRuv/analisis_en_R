@@ -1,4 +1,4 @@
-# Título pendiente
+# Influenza vs COVID
 Lo siguiente es una descripción general del análisis realizado. Para información más específica, cada sección de código tendrá documentación detallando las desiciones tomadas, teoría, código, resultados y conclusiones.
 
 ## Planteamiento
