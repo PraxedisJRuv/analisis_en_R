@@ -1,14 +1,12 @@
 # Análisis en R
 Análisis y herramientas en R hechos para proyectos de investigación, que te sirvan como herramienta de estudio de estadística y R. 
 
-Cada carpeta numerada contiene un caso en el que se trabajó, así como un readme explicando las generalidades. A su vez, cada script cuenta con un archivo .md del mismo nombre que entra en detalle sobre el código y la teoría aplicada en ese script particular así como el problema que resuelve. La descricpión del caso según el número de carpeta, está en este mismo readme.
-
 La intención del repositorio es tener estos casos que sirvan como un recurso de apoyo en tus proyectos, y si es posible, hasta corrigiendo algo de estos proyectos ya concluidos. 
 
 ## Manera de uso del repositorio
+Hay dos carpetas principales, donde cada uno contiene solamente carpetas númeradas y un readme, el cual tiene una lista en la cual se indica cuál es el proyecto contenido en dicha carpeta
+- cases/ contiene 
+- reviews/ contiene notas sobre proyectos de investigación a los que únicamente se revisó si tenían errores. Por lo que todos cuentan con un archvio .md detallando sobre el problema, qué detalles tenía y posibles errores, además de qué correcciones pudieran hacerse.
 
-
-## Casos 
-1. Invfluenza vs COVID: Se buscó revisar cómo cambiaron los positivos de influenza detectados antes, durante y después del COVID-19.
-
-2. VPH: En un estudio de VPH se buscó una forma de obtener los grupos de genotipos más comúnes en una población de mujeres, así como maneras en qué presentar los resultados.
+## Notas
+En ningún caso se comparten los datos utilizados. Sin embargo, en las documentaciones sobre el código, siempre se detalla el formato de los datos para que puedas usar el código también sin ningún problema.
