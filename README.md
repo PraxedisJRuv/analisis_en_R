@@ -5,6 +5,9 @@ Cada carpeta numerada contiene un caso en el que se trabajó, así como un readm
 
 La intención del repositorio es tener estos casos que sirvan como un recurso de apoyo en tus proyectos, y si es posible, hasta corrigiendo algo de estos proyectos ya concluidos. 
 
+## Manera de uso del repositorio
+
+
 ## Casos 
 1. Invfluenza vs COVID: Se buscó revisar cómo cambiaron los positivos de influenza detectados antes, durante y después del COVID-19.
 
