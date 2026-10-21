@@ -2,7 +2,7 @@
 Preparar los datos crudos para que sean manejables en procesos posteriores. Aquí se detectan nulos, se corrigen negativos y se descarta la información innesecaria para procesos posteriores. Se prepara lo necesario como llenar de 0 los datos del COVID previos a 2020 o recorte de últimas semanas reportadas dada posibles actualizaciones de esa información.
 
 ## Funciones
-### _revisar_ _datos_
+### *revisar_datos*
  
  Revisa si hay presencia de nulos en los datos y avisa esto para una revisión manual. Cambia los negativos por su valor absoluto, y remueve las filas y columnas innecesarias dependiendo de los datos. por ejemplo, en este caso concreto las filas 34:36 no tenían información relvante y estaban presentes en todos los archvios, por lo que eran removidas ya que solo interesaban los conteos de positivos de las 32 entidades federativas. 
 
@@ -11,19 +11,19 @@ Preparar los datos crudos para que sean manejables en procesos posteriores. Aqu�
  Se imprimé cada que se sustituye un negativo para revisar si había una cantidad de negativos anormal. Se consideró simplemente sustituir por valor absoluto ya que eran pocos los negativos y acordó que eran "error de dedo"
 
  **Argumentos:**
- - _i_: Iteración en la que se está utilizando _revisar datos_, es decir, si _i=5_ es porque se está revisando el quinto año
+ - _i_: Iteración en la que se está utilizando *revisar_datos*, es decir, si _i=5_ es porque se está revisando el quinto año
  - _data_: el dataframe crudo leído del excel donde se tuviera
  - _tipo_: la enfermedad o categoría de lo que se está evalúando la información. Aquí se usó "influenza" y "covid".
 
-### _agregar_ _a_ _lista_
+### *agregar_a_lista*
 
 Lee un archivo de excel para obtener los datos de un año de información de los positivos de una enfermedad en específico, bajo determinadas condiciones dadas en los argumentos de la función, llama a la función _revisar_ _datos_ para prepararlos, para después guardarlos en una lista donde se tienen el resto de datos en orden y se mantienen en orden bajo la implementación.
 
 **Argumentos:**
 - _i_:la hoja del excel donde se encuentra el dato
 - _lista_: una lista en la cual agregar los data.frames con la información de frecuencias por semana
-- _file path_: la dirección del archivo de excel
-- _rango tabla_: las coordenadas de la tabla de excel con los datos.
+- *file_path*: la dirección del archivo de excel
+- *rango_tabla*: las coordenadas de la tabla de excel con los datos.
 
 ## Funciones de R
 ### _is.na(x)_
