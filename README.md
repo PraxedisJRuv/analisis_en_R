@@ -11,4 +11,6 @@ Hay dos carpetas principales, donde cada uno contiene solamente carpetas númera
 Recomiendo tener dos ventanas abiertas en caso de querer entender el código para en una tener abierta el script.R de scripts/ y en otra tener el script.md de docs/. Si solo se busca revisar teoría o elementos de reviews, basta con abrir en el buscador los archivos .md correspondientes para poder leerlos comodamente. 
 
 ## Notas
-En ningún caso se comparten los datos utilizados. Sin embargo, en las documentaciones sobre el código, siempre se detalla el formato de los datos para que puedas usar el código también sin ningún problema.
+- En ningún caso se comparten los datos utilizados. Sin embargo, en las documentaciones sobre el código, siempre se detalla el formato de los datos para que puedas usar el código también sin ningún problema.
+
+- El código y su implementación está pensado en R a través de Rstudio, es necesario especificar para tomar en cuenta impresión de resultados y guardado de gráficas manual.

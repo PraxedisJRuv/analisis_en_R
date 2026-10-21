@@ -37,6 +37,19 @@ Todo el proceso fue realizado en R versión 4.5.2. El único paquete utilizado f
 
 - **Analisis por temporada**: Describir y comparar sin parámetros las formas de las olas, revisando picos, totales, fechas y duración por temporada. (Esto y los 0s es lo que se recomienda hacer).
 
+## Código
+La implementación completa del código se encuentra en scripts/ mientras que en docs/ se encuntran documentos .md homónimos a los .R describiendo estos a detalle. 
+### orden de ejecución
+1. *limpieza.R*
+2. *alineamiento.R*
+3. *ceros.R* (opcional)
+4. *its.R*
+5. *estacionalidad.R*
+6. *inferencia_HAC.R*
+7. *res_principal.R*
+8. *sensibilidad.R*
+9. *temporadas.R*
+
 ## Sobre los datos utilizados
 En particular, lo que me fue entregado se trató de dos Exceles con los positivos reportados del COVID e influenza.
 La información de la influenza iba de 2019 a la semana 35 de 2026, donde cad añao era una hoja del Excel. De COVID era de 2020 a la semana 35 de 2026. Las hojas estaban en orden ascendente y todas las hojas tenían el mismo formato que eran filas por cada estado y cada columna una semana epidemiólogica, donde cada celda era un positivo.

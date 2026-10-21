@@ -42,7 +42,7 @@ revisar_datos<-function(i,data,tipo){
     indices_negativos<-which(datos_limpios<0, arr.ind = TRUE)
     for(i in 1:nrow(indices_negativos)){
       datos_limpios[indices_negativos[i,1],indices_negativos[i,2]]<-abs(datos_limpios[indices_negativos[i,1],indices_negativos[i,2]])
-      cat("Removiendo negativo #",i,"\n")
+      cat("Sustituyendo negativo #",i,"\n")
     }
   }
   
