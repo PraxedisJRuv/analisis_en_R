@@ -6,7 +6,7 @@ Preparar los datos crudos para que sean manejables en procesos posteriores. Aqu�
  
  Revisa si hay presencia de nulos en los datos y avisa esto para una revisión manual. Cambia los negativos por su valor absoluto, y remueve las filas y columnas innecesarias dependiendo de los datos. por ejemplo, en este caso concreto las filas 34:36 no tenían información relvante y estaban presentes en todos los archvios, por lo que eran removidas ya que solo interesaban los conteos de positivos de las 32 entidades federativas. 
 
- A su vez, hay criterios condicionales para remover la fila correspondiente a la semana 43, que es algo que existe en epidemiología en México, por la semana epidemiólogica empezar en domingo y es cada 6 años. Por eso se considera el módulo 5, como criterio para considerar si es un año correspondiente, ya que los datos desde los que se usa la función son a partir de 2020, y se toma _i-1_ para comparar con el módulo. 
+ A su vez, hay criterios condicionales para remover la fila correspondiente a la semana 53, que es algo que existe en epidemiología en México, por la semana epidemiólogica empezar en domingo y es cada 6 años. Por eso se considera el módulo 5, como criterio para considerar si es un año correspondiente, ya que los datos desde los que se usa la función son a partir de 2020, y se toma _i-1_ para comparar con el módulo. 
 
  Se imprimé cada que se sustituye un negativo para revisar si había una cantidad de negativos anormal. Se consideró simplemente sustituir por valor absoluto ya que eran pocos los negativos y acordó que eran "error de dedo"
 
