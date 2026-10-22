@@ -1,7 +1,7 @@
 # helpers.R
 Contiene todas las funciones necesarias para ejecutar tuplas.R
 
-Las funciones están separadas porque son muy largas y estorban al proceso general de tuplas.R, así es más claro entender las funciones y algoritmos en helpers.R y el proceso y flujo general de tuplas.R
+Las funciones están separadas porque son muy largas y estorban al proceso general de tuplas.R, así es más claro entender las funciones y algoritmos en helpers.R y el proceso y flujo general de tuplas.R. Por lo tal, este script solo se ejecuta para guardar las funciones en el entorno de RStudio.
 
 ## Funciones
 ### *comparar_vectores*
@@ -26,7 +26,7 @@ Revisa las sumas por renglones de las columnas de cada renglón de *datos_positi
 **Output**: Devuelve una lista donde cada entrada de la lista es un vector con los nombres de los genotipos.
 
 ### *tuplas_repitidas*
-Revisa de una lista de tuplas, cuáles son las que se repiten al menos.
+Revisa de una lista de tuplas evalúando cuáles son las que se repiten al menos una vez.
 
 Revisa dentro de la lista *tuplas* que valores están repetidos, si existe la repetición, se guarda en una lista.
 
@@ -38,7 +38,7 @@ Revisa dentro de la lista *tuplas* que valores están repetidos, si existe la re
 ### *frecuencias_y_tuplas_mas_repetidas*
 Determina cuántas veces y cuáles tuplas se repitieron.
 
-De *mas_comunes_repetidas* se toma
+De *mas_comunes_repetidas* se toma el primer elemento y se determina que su frecuencia es 2, ya que si está en la lista de repetidos al menos una vez, significa que al menos existen dos de esas tuplas y al haberse guardado se removió una repetición, por lo que siempre que se agregue una tupla nueva su frecuencia empieza en 2. Después se van revisando los siguientes tuplas en la lista, si alguna es igual a las tuplas que ya hemos visto, le agregamos a esta una frecuencia, si no es igual, la agregamos a la lista junto con una frecuencia de 2 y continuamos hasta haber explorado todas las tuplas que tuvieron al menos una repetición.
 
 **Argumentos**:
 - *mas_comunes_repetidas*: lista con las tuplas que se repitieron al menos una vez, asumiendo que se guardaron en la forma de *tuplas_repetidas*, es decir, se guardaron también las repeticiones.
