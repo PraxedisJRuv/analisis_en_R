@@ -1,5 +1,5 @@
 #se va a seleccionar pand
-spec <- "pand"  #Decisión en base criterios
+spec <- "periodo"                        # <- tu decisión
 m    <- get(c(comun = "m_c", pand = "m_pand", periodo = "m_per")[spec])
 
 

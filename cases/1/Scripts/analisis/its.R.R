@@ -1,4 +1,7 @@
+#El primer análisis se ralizó con el corte 2022-04-01 que fue el fin de la pandemia de manera oficial
+
 corte1 <- as.Date("2020-03-15"); corte2 <- as.Date("2022-04-01")
+#corte1 <- as.Date("2020-03-15"); corte2 <- as.Date("2021-06-20")
 
 df$temporada <- ifelse(df$semana >= 27,
                        paste0(df$anio, "-", df$anio + 1),
@@ -46,3 +49,4 @@ ajusta <- function(f, dat) {
   if (!m$converged) warning("glm.nb no convergió")
   m
 }
+nac <- prep_nac(d, corte1, corte2)

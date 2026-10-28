@@ -15,7 +15,7 @@ a_largo <- function(d, anio, nombre) {
 
 
 #Juntar todo en un dataframe apropiada para las pruebas
-anios <- 2019:2026
+anios <- 2017:2026
 
 flu <- do.call(rbind, lapply(anios, function(a)
   a_largo(lista_influenza[[as.character(a)]], a, "flu")))

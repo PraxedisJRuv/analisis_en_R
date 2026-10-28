@@ -5,7 +5,20 @@ tab_K <- t(sapply(1:4, function(k) {
   c(K = k, AIC = AIC(m), BIC = BIC(m), conv = m$converged)
 }))
 tab_K
-K <- 3     # ajusta según AIC/BIC; con BIC suele elegirse menos
+
+t(sapply(1:4, function(k) {
+  m <- ajusta(fml_n(k, "pand"), nac)
+  c(K = k, AIC = AIC(m), BIC = BIC(m), conv = m$converged)
+}))
+
+
+t(sapply(1:4, function(k) {
+  m <- ajusta(fml_n(k, "periodo"), nac)
+  c(K = k, AIC = AIC(m), BIC = BIC(m), conv = m$converged)
+}))
+
+
+K <- 3    # ajusta según AIC/BIC; con BIC suele elegirse menos
 
 #Probar si la estacionalidad cambió con 3 métricas distintas
 m_c    <- ajusta(fml_n(K, "comun"),   nac)

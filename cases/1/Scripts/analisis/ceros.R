@@ -1,5 +1,5 @@
 #Calculo de ceros a nivel nacional
-nac <- prep_nac(d, corte1, corte2)
+
 plot(nac$fecha, nac$flu, type = "l"); abline(v = c(corte1, corte2), lty = 2)
 mean(nac$flu == 0)      # ceros nacionales (debería ser ~0 en el mundo real)
 tapply(nac$flu == 0, nac$periodo, mean)

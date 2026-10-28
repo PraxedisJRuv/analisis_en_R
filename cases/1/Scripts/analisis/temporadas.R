@@ -8,7 +8,9 @@ res_tem <- do.call(rbind, lapply(split(tem, tem$temporada), function(s) {
              total_flu = sum(s$flu), pico_flu = s$flu[i],
              fecha_pico = s$fecha[i], sem_pico = s$semana[i],
              dur_20pct = sum(s$flu >= 0.2 * s$flu[i]),   # umbral arbitrario
-             total_covid = sum(s$covid), fecha_pico_covid = s$fecha[j])
+             total_covid = sum(s$covid), fecha_pico_covid = s$fecha[j],
+             pico_covid=s$covid[i], sem_pico_covid= s$semana[j],
+             dur_20pct= sum(s$covid>=0.2*s$covid[j]))
 }))
 res_tem
 
